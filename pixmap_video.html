@@ -6,8 +6,8 @@
         <title>Pixmap</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        
+
+
         <meta property="og:site_name" content="Pixmap">
         <meta property="og:title" content="Mobile-Based Image Analytics">
         <meta property="og:image" content="https://pixmap.io/assets/img/gallery/pixmap_cover.jpg">
@@ -18,10 +18,10 @@
         <meta name="twitter:card" content="summary_large_image">
 
         <link rel="manifest" href="site.webmanifest">
-     
+
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon_pixmap.png">
-       
-        
+
+
 		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -34,10 +34,93 @@
             <link rel="stylesheet" href="assets/css/slick.css">
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
+
+            <style>
+                /* FOR COLUMNS */
+                .column img {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+        
+                .column img:hover {
+                    opacity: 1;
+                }
+        
+                .column {
+                    padding: 1%;
+                }
+        
+                /* FOR TABS */
+                /* Style the tab */
+                .tab {
+                    overflow: hidden;
+                    border: 1px solid #ccc;
+                    background-color: coral;
+                }
+        
+                /* Style the buttons inside the tab */
+                .tab button {
+                    background-color: inherit;
+                    float: left;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 14px 16px;
+                    transition: 0.3s;
+                    font-size: 17px;
+                }
+        
+                /* Change background color of buttons on hover */
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+        
+                /* Create an active/current tablink class */
+                .tab button.active {
+                    background-color: #ccc;
+                }
+        
+                /* Style the tab content */
+                .tabcontent {
+                    display: none;
+                    padding: 6px 12px;
+                    border: 1px solid #ccc;
+                    border-top: none;
+                }
+        
+                /* FOR JSON */
+                pre {
+                    outline: 1px solid #ccc;
+                    padding: 5px;
+                    margin: 5px;
+                }
+        
+                .string {
+                    color: green;
+                }
+        
+                .number {
+                    color: darkorange;
+                }
+        
+                .boolean {
+                    color: blue;
+                }
+        
+                .null {
+                    color: magenta;
+                }
+        
+                .key {
+                    color: red;
+                }
+        
+                /* FOR IMAGES */
+            </style>
    </head>
 
    <body>
-       
+
     <!-- Preloader Start -->
     <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -60,21 +143,100 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-tittle text-center">
-                            <h2>Pixmap Video Analysis</h2>
+                            <h2 style="margin-bottom: 3%;">Pixmap Video Analysis</h2>
                         </div>
                     </div>
                 </div>
+
+                <div class="row justify-content-center">
+                    <div class="column">                     
+                           <a href="assets/video/pixmap_retornables_inca_kola.mp4" target="iframe1">
+                            <img width="200" height="150" id="vid1" alt="" src="assets/video/vid1.png" onclick="myFunction(this);">
+                           </a> 
+                           <a href="assets/video/pixmap_retornables_inca_kola_2.mp4" target="iframe1">
+                            <img width="200" height="150" id="vid2" alt="" src="assets/video/vid2.png" onclick="myFunction(this);">
+                           </a> 
+                           <a href="assets/video/pixmap_inca_kola_te_para_la_olla.mp4" target="iframe1">
+                            <img width="200" height="150" id="vid3" alt="" src="assets/video/vid3.png" onclick="myFunction(this);">
+                           </a> 
+                    </div>
+                </div>
+                
                 <!-- Section caption -->
                 <div class="row">
-                    <video width="700" height="240" controls src="assets/video/pixmap_retornables.avi">        
-                        Your browser does not support the video tag.
-                     </video>                                     
-                </div>      
+                    <div class="column">
+                        <!-- <video width="600" height="400" controls src="assets/video/retornables_inca_kola.mp4">        
+                            Your browser does not support the video tag.
+                         </video> -->                     
+                         <iframe width="600" height="400" name="iframe1" class="myClass" src="" style="border: 4px #6F06F9 solid;"></iframe>
+                           
+                    </div>
+
+                    <div class="column" style="padding-left: 1%;">
+                        <h5>Tiempo de aparición del logo:</h3>
+                        <p id="time">-</p>
+                        <h5>Porcentaje del tiempo de aparición del logo:</h3>
+                        <p id="timep_proportion">-</p>
+                        <h5>Porcentaje del área del logo:</h3>
+                        <p id="area_proportion">-</p>
+                        <h5>Porcentaje de atención visual:</h3>
+                        <p id="interest_attention">-</p>
+                        <h5>Porcentaje de atención visual en el logo con respecto <br> a la atención visual:</h3>
+                        <p id="area_interes_attention">-</p>
+                        <h5>Porcentaje de atención de acuerdo a las intensidades:</h3>
+                        <p>-</p>
+                    </div>
+                </div>
+               
+                <script>
+                    // FUNCTIONS FOR LOAD IMAGES
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("vid1").click();
+                    //myFunction(document.getElementById("vid1"));
+
+                    function myFunction(imgs) {
+                        document.getElementById("vid1").style.border = "none";
+                        document.getElementById("vid2").style.border = "none";
+                        document.getElementById("vid3").style.border = "none";                       
+
+                        imgs.style.border = "8px solid #6F06F9";                       
+                      
+
+                        if (imgs.id == "vid1") {
+                            document.getElementById("time").innerHTML = "5.59s";
+                            document.getElementById("timep_proportion").innerHTML = "93.05%";
+                            document.getElementById("area_proportion").innerHTML = "3.50%";
+                            document.getElementById("interest_attention").innerHTML = "32.56%";
+                            document.getElementById("area_interes_attention").innerHTML = "9.40%";
+                        
+                        }
+                        else if (imgs.id == "vid2"){
+                            document.getElementById("time").innerHTML = "5.42s";
+                            document.getElementById("timep_proportion").innerHTML = "90.27%";
+                            document.getElementById("area_proportion").innerHTML = "2.66%";
+                            document.getElementById("interest_attention").innerHTML = "33.96%";
+                            document.getElementById("area_interes_attention").innerHTML = "7.04%";
+                        }
+                         else {
+                            document.getElementById("time").innerHTML = "12.66s";
+                            document.getElementById("timep_proportion").innerHTML = "63.33%";
+                            document.getElementById("area_proportion").innerHTML = "0.35%";
+                            document.getElementById("interest_attention").innerHTML = "31.32%";
+                            document.getElementById("area_interes_attention").innerHTML = "1.08%";                       
+                        }                        
+                            
+                    }                   
+                    </script>
+
+                    
+
+
+                
 
             </div>
         </section>
-        <!-- Services Area End -->       
-           
+        <!-- Services Area End -->
+
     </main>
 
 
@@ -101,7 +263,7 @@
                               </div>
                           </div>
                      </div>
- 
+
                     <!--
                      <div class="col-lg-2 col-md-4 col-sm-5">
                          <div class="single-footer-caption mb-50">
@@ -118,20 +280,20 @@
                          </div>
                      </div>
                      -->
- 
+
                      <div class="col-lg-2 col-md-4 col-sm-7">
                          <div class="single-footer-caption mb-50">
                              <div class="footer-tittle">
                                  <h4>Support</h4>
-                                 <ul>                                                                    
-                                     <li><a href="faqs.html">FAQs</a></li>                                   
+                                 <ul>
+                                     <li><a href="faqs.html">FAQs</a></li>
                                      <!-- <li><a href="#">Privacy Policy</a></li> -->
                                      <li><a href="terms_conditions.html">Terms & Conditions</a></li>
                                  </ul>
                              </div>
                          </div>
                      </div>
- 
+
                      <div class="col-lg-2 col-md-4 col-sm-5">
                          <div class="single-footer-caption mb-50">
                              <div class="footer-tittle">
@@ -144,8 +306,8 @@
                                      <tr>
                                          <td style="text-align:center; vertical-align:top;">
                                              <p>3 free tests </p>
-                                         </td>                                            
-                                     </tr>                                    
+                                         </td>
+                                     </tr>
                                  </table>
                              </div>
                          </div>
@@ -157,7 +319,7 @@
                                  <h4>Download</h4>
                                  <div class="footer-pera footer-pera2">
                                   <p>Heaven fruitful doesn't over lesser in days. Appear </p>
-                              </div>                            
+                              </div>
                               <div class="footer-form">
                                   <div id="mc_embed_signup">
                                       <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
@@ -174,36 +336,36 @@
                      </div>
                      -->
                  </div>
-             
+
                  <!-- Copy-Right -->
                  <div class="row align-items-center">
-                     <div class="col-xl-12 ">                        
-                         <div class="footer-copy-right">                                                      
-                             
-                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                         
-                             
- 
+                     <div class="col-xl-12 ">
+                         <div class="footer-copy-right">
+
+                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
                          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                              &copy;<script>document.write(new Date().getFullYear());</script> <a href="https://neurometrics.la/" target="_blank">Neurometrics</a> | &nbsp; <a href="https://www.facebook.com/pixmap.io/" target="_blank" class="fa fa-facebook"></a> &nbsp; <a href="https://www.instagram.com/pixmap.io/" target="_blank" class="fa fa-instagram"></a>
                              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                         </div>                       
-         
+                         </div>
+
                      </div>
                  </div>
-                 
+
              </div>
-             
-         </div>       
-                 
-       </div>     
+
+         </div>
+
+       </div>
         <!-- Footer End-->
- 
+
     </footer>
 	<!-- JS here -->
-	
+
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		
+
 		<!-- Jquery, Popper, Bootstrap -->
 		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="./assets/js/popper.min.js"></script>
@@ -225,17 +387,17 @@
         <script src="./assets/js/jquery.scrollUp.min.js"></script>
         <script src="./assets/js/jquery.nice-select.min.js"></script>
 		<script src="./assets/js/jquery.sticky.js"></script>
-        
+
         <!-- contact js -->
         <script src="./assets/js/contact.js"></script>
         <script src="./assets/js/jquery.form.js"></script>
         <script src="./assets/js/jquery.validate.min.js"></script>
         <script src="./assets/js/mail-script.js"></script>
         <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
+
+		<!-- Jquery Plugins, main Jquery -->
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
-        
+
     </body>
 </html>
