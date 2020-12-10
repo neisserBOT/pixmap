@@ -172,18 +172,19 @@
                     </div>
 
                     <div class="column" style="padding-left: 1%;">
-                        <h5>Tiempo de aparición del logo:</h3>
-                        <p id="time">-</p>
-                        <h5>Porcentaje del tiempo de aparición del logo:</h3>
-                        <p id="timep_proportion">-</p>
-                        <h5>Porcentaje del área del logo:</h3>
-                        <p id="area_proportion">-</p>
-                        <h5>Porcentaje de atención visual:</h3>
+                        <h5>1. Porcentaje de atención visual</h5>
                         <p id="interest_attention">-</p>
-                        <h5>Porcentaje de atención visual en el logo con respecto <br> a la atención visual:</h3>
+                        <h5>2. Tiempo de aparición del logo</h5>
+                        <p id="time">-</p>
+                        <h5>3. Porcentaje del tiempo de aparición del logo</h5>
+                        <p id="time_proportion">-</p>
+                        <h5>4. Porcentaje del área del logo</h5>
+                        <p id="area_proportion">-</p>
+                        <h5>5. Porcentaje de atención en el logo con respecto <br> a la atención visual</h5>
                         <p id="area_interes_attention">-</p>
-                        <h5>Porcentaje de atención de acuerdo a las intensidades:</h3>
+                        <h5>Semáforo de atención visual</h5>
                         <p id="intensity_area_interes_attention">-</p>
+
                     </div>
                 </div>
                
@@ -203,7 +204,7 @@
 
                         if (imgs.id == "vid1") {
                             document.getElementById("time").innerHTML = "5.59s";
-                            document.getElementById("timep_proportion").innerHTML = "93.05%";
+                            document.getElementById("time_proportion").innerHTML = "93.05%";
                             document.getElementById("area_proportion").innerHTML = "3.50%";
                             document.getElementById("interest_attention").innerHTML = "32.56%";
                             document.getElementById("area_interes_attention").innerHTML = "9.40%";
@@ -212,7 +213,7 @@
                         }
                         else if (imgs.id == "vid2"){
                             document.getElementById("time").innerHTML = "5.42s";
-                            document.getElementById("timep_proportion").innerHTML = "90.27%";
+                            document.getElementById("time_proportion").innerHTML = "90.27%";
                             document.getElementById("area_proportion").innerHTML = "2.66%";
                             document.getElementById("interest_attention").innerHTML = "33.96%";
                             document.getElementById("area_interes_attention").innerHTML = "7.04%";
@@ -220,7 +221,7 @@
                         }
                          else {
                             document.getElementById("time").innerHTML = "12.66s";
-                            document.getElementById("timep_proportion").innerHTML = "63.33%";
+                            document.getElementById("time_proportion").innerHTML = "63.33%";
                             document.getElementById("area_proportion").innerHTML = "0.35%";
                             document.getElementById("interest_attention").innerHTML = "31.32%";
                             document.getElementById("area_interes_attention").innerHTML = "1.08%";
