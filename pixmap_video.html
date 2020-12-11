@@ -1,125 +1,127 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Pixmap</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pixmap</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <meta property="og:site_name" content="Pixmap">
-        <meta property="og:title" content="Mobile-Based Image Analytics">
-        <meta property="og:image" content="https://pixmap.io/assets/img/gallery/pixmap_cover.jpg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        <meta property="og:description" content="Upload and assess images in no time using machine learning algorithms trainded with real ocular patterns.">
-        <meta property="og:url" content="https://pixmap.io">
-        <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Pixmap">
+    <meta property="og:title" content="Mobile-Based Image Analytics">
+    <meta property="og:image" content="https://pixmap.io/assets/img/gallery/pixmap_cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description"
+        content="Upload and assess images in no time using machine learning algorithms trainded with real ocular patterns.">
+    <meta property="og:url" content="https://pixmap.io">
+    <meta name="twitter:card" content="summary_large_image">
 
-        <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
 
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon_pixmap.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon_pixmap.png">
 
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-            <style>
-                /* FOR COLUMNS */
-                .column img {
-                    opacity: 0.8;
-                    cursor: pointer;
-                }
-        
-                .column img:hover {
-                    opacity: 1;
-                }
-        
-                .column {
-                    padding: 1%;
-                }
-        
-                /* FOR TABS */
-                /* Style the tab */
-                .tab {
-                    overflow: hidden;
-                    border: 1px solid #ccc;
-                    background-color: coral;
-                }
-        
-                /* Style the buttons inside the tab */
-                .tab button {
-                    background-color: inherit;
-                    float: left;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                    padding: 14px 16px;
-                    transition: 0.3s;
-                    font-size: 17px;
-                }
-        
-                /* Change background color of buttons on hover */
-                .tab button:hover {
-                    background-color: #ddd;
-                }
-        
-                /* Create an active/current tablink class */
-                .tab button.active {
-                    background-color: #ccc;
-                }
-        
-                /* Style the tab content */
-                .tabcontent {
-                    display: none;
-                    padding: 6px 12px;
-                    border: 1px solid #ccc;
-                    border-top: none;
-                }
-        
-                /* FOR JSON */
-                pre {
-                    outline: 1px solid #ccc;
-                    padding: 5px;
-                    margin: 5px;
-                }
-        
-                .string {
-                    color: green;
-                }
-        
-                .number {
-                    color: darkorange;
-                }
-        
-                .boolean {
-                    color: blue;
-                }
-        
-                .null {
-                    color: magenta;
-                }
-        
-                .key {
-                    color: red;
-                }
-        
-                /* FOR IMAGES */
-            </style>
-   </head>
+    <style>
+        /* FOR COLUMNS */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
 
-   <body>
+        .column img:hover {
+            opacity: 1;
+        }
+
+        .column {
+            padding: 1%;
+        }
+
+        /* FOR TABS */
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: coral;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        /* FOR JSON */
+        pre {
+            outline: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .string {
+            color: green;
+        }
+
+        .number {
+            color: darkorange;
+        }
+
+        .boolean {
+            color: blue;
+        }
+
+        .null {
+            color: magenta;
+        }
+
+        .key {
+            color: red;
+        }
+
+        /* FOR IMAGES */
+    </style>
+</head>
+
+<body>
 
     <!-- Preloader Start -->
     <!-- <div id="preloader-active">
@@ -134,107 +136,168 @@
     </div> -->
     <!-- Preloader Start -->
 
-     <main>
+    <main>
 
         <!-- Services Area Start -->
-        <section class="service-area services-padding" style="padding-top: 3%">
+        <section class="service-area services-padding sky-blue" style="padding-top: 3%">
             <div class="container">
                 <!-- Section Tittle -->
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center" style="margin-bottom: 2%;">
                     <div class="col-lg-6">
                         <div class="section-tittle text-center">
-                            <h2 style="margin-bottom: 3%;">Pixmap Video Analysis</h2>
+                            <h2 style="margin-bottom: 5%;">Pixmap Video Analysis</h2>
                         </div>
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="column">                     
-                           <a href="assets/video/pixmap_retornables_inca_kola.mp4" target="iframe1">
-                            <img width="200" height="150" id="vid1" alt="" src="assets/video/vid1.png" onclick="myFunction(this);">
-                           </a> 
-                           <a href="assets/video/pixmap_retornables_inca_kola_2.mp4" target="iframe1">
-                            <img width="200" height="150" id="vid2" alt="" src="assets/video/vid2.png" onclick="myFunction(this);">
-                           </a> 
-                           <a href="assets/video/pixmap_inca_kola_te_para_la_olla.mp4" target="iframe1">
-                            <img width="200" height="150" id="vid3" alt="" src="assets/video/vid3.png" onclick="myFunction(this);">
-                           </a> 
-                    </div>
-                </div>
-                
-                <!-- Section caption -->
                 <div class="row">
+
                     <div class="column">
                         <!-- <video width="600" height="400" controls src="assets/video/retornables_inca_kola.mp4">        
                             Your browser does not support the video tag.
-                         </video> -->                     
-                         <iframe width="600" height="400" name="iframe1" class="myClass" src="" style="border: 4px #6F06F9 solid;" controls autoplay></iframe>                           
+                         </video> -->
+                        <iframe width="600" height="400" name="iframe1" class="myClass" src=""
+                            style="border: 4px #6F06F9 solid;" controls autoplay></iframe>
                     </div>
 
-                    <div class="column" style="padding-left: 1%;">
-                        <h5>1. Porcentaje de atención visual</h5>
-                        <p id="interest_attention">-</p>
-                        <h5>2. Tiempo de aparición del logo</h5>
-                        <p id="time">-</p>
-                        <h5>3. Porcentaje del tiempo de aparición del logo</h5>
-                        <p id="time_proportion">-</p>
-                        <h5>4. Porcentaje del área del logo</h5>
-                        <p id="area_proportion">-</p>
-                        <h5>5. Porcentaje de atención en el logo con respecto <br> a la atención visual</h5>
-                        <p id="area_interes_attention">-</p>
-                        <h5>Semáforo de atención visual</h5>
-                        <p id="intensity_area_interes_attention">-</p>
-
+                    <div class="column" style="padding-left: 5%;">
+                        <div class="row">
+                            <a href="assets/video/pixmap_retornables_inca_kola.mp4" target="iframe1">
+                                <img width="150" height="100" id="vid1" alt="" src="assets/video/vid1.png"
+                                    onclick="myFunction(this);">
+                            </a>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <a href="assets/video/pixmap_retornables_inca_kola_2.mp4" target="iframe1">
+                                <img width="150" height="100" id="vid2" alt="" src="assets/video/vid2.png"
+                                    onclick="myFunction(this);">
+                            </a>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <a href="assets/video/pixmap_inca_kola_te_para_la_olla.mp4" target="iframe1">
+                                <img width="150" height="100" id="vid3" alt="" src="assets/video/vid3.png"
+                                    onclick="myFunction(this);">
+                            </a>
+                        </div>
                     </div>
                 </div>
-               
-                <script>
-                    // FUNCTIONS FOR LOAD IMAGES
-                    // Get the element with id="defaultOpen" and click on it
-                    document.getElementById("vid1").click();
-                    //myFunction(document.getElementById("vid1"));
+                <br>
+                <br>
 
-                    function myFunction(imgs) {
-                        document.getElementById("vid1").style.border = "none";
-                        document.getElementById("vid2").style.border = "none";
-                        document.getElementById("vid3").style.border = "none";                       
+                <!-- Section caption -->
+                <div class="row">
+                    <div class="column">
+                        <img width="20" src="assets/img/shape/check_purple.png" alt="">
+                    </div>
+                    <div class="column" style="width:550px;">
+                        <h4></span>% de atención visual general: <span style="color:#6F06F9"
+                                id="interest_attention"></span></h5>
+                            <p>Porcentaje del video que captura la atención visual de una persona típica.</p>
+                    </div>
 
-                        imgs.style.border = "8px solid #6F06F9";                       
-                      
+                    <div class="column">
+                        <img width="20" src="assets/img/shape/check_purple.png" alt="">
+                    </div>
 
-                        if (imgs.id == "vid1") {
-                            document.getElementById("time").innerHTML = "5.59s";
-                            document.getElementById("time_proportion").innerHTML = "93.05%";
-                            document.getElementById("area_proportion").innerHTML = "3.50%";
-                            document.getElementById("interest_attention").innerHTML = "32.56%";
-                            document.getElementById("area_interes_attention").innerHTML = "9.40%";
-                            document.getElementById("intensity_area_interes_attention").innerHTML = "red: 2.19%, semired: 3.37%, orange: 2.05%, yellow: 1.61%, green: 0.18%";                            
-                        
-                        }
-                        else if (imgs.id == "vid2"){
-                            document.getElementById("time").innerHTML = "5.42s";
-                            document.getElementById("time_proportion").innerHTML = "90.27%";
-                            document.getElementById("area_proportion").innerHTML = "2.66%";
-                            document.getElementById("interest_attention").innerHTML = "33.96%";
-                            document.getElementById("area_interes_attention").innerHTML = "7.04%";
-                            document.getElementById("intensity_area_interes_attention").innerHTML = "red: 1.39%, semired: 2.29%, orange: 2.10%, yellow: 1.17%, green: 0.09%"; 
-                        }
-                         else {
-                            document.getElementById("time").innerHTML = "12.66s";
-                            document.getElementById("time_proportion").innerHTML = "63.33%";
-                            document.getElementById("area_proportion").innerHTML = "0.35%";
-                            document.getElementById("interest_attention").innerHTML = "31.32%";
-                            document.getElementById("area_interes_attention").innerHTML = "1.08%";
-                            document.getElementById("intensity_area_interes_attention").innerHTML = "red: 0.07%, semired: 0.21%, orange: 0.27%, yellow: 0.29%, green: 0.23%";                 
-                        }                        
-                            
-                    }                   
-                    </script>
+                    <div class="column" style="width:550px;">
+                        <h4>% del área del logo: <span style="color:#6F06F9" id="area_proportion"></span></h5>
+                            <p>Porcentaje que ocupa el área del logo con respecto al área total del video.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img width="20" src="assets/img/shape/check_purple.png" alt="">
+                    </div>
+                    <div class="column" style="width:550px;">
+                        <h4>Tiempo de aparición del logo: <span style="color:#6F06F9" id="time"></span></h5>
+                            <p>Tiempo de aparición del logo de la marca durante el video.</p>
+                    </div>
 
-                    
+                    <div class="column">
+                        <img width="20" src="assets/img/shape/check_purple.png" alt="">
+                    </div>
+
+                    <div class="column" style="width:550px;">
+                        <h4>% de atención en el logo: <span
+                                style="color:#6F06F9" id="area_interes_attention"></span></h5>
+                            <p>Porcentaje de atención en el logo con respecto a la atención total recibida durante
+                                el video.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img width="20" src="assets/img/shape/check_purple.png" alt="">
+                    </div>
+                    <div class="column" style="width:550px;">
+                        <h4>% del tiempo de aparición del logo: <span style="color:#6F06F9" id="time_proportion"></span>
+                            </h5>
+                            <p>Porcentaje del tiempo total en el que aparece el logo durante <br>el video.</p>
+                    </div>
+
+                    <div class="column">
+                        <img width="20" src="assets/img/shape/check_purple.png" alt="">
+                    </div>
+
+                    <div class="column" style="width:550px;">
+                        <h4>Semáforo de atención visual sobre el logo:</h5>
+                            <span style="color:#6F06F9" id="intensity_area_interes_attention"></span>
+                            <p>Porcentaje de atención visual sobre el logo siendo rojo a lo que se le presta mayor atención.</p>
+                    </div>
+                </div>
+
+              
+            </div>
+
+            <script>
+                // FUNCTIONS FOR LOAD IMAGES
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("vid1").click();
+                //myFunction(document.getElementById("vid1"));
+
+                function myFunction(imgs) {
+                    document.getElementById("vid1").style.border = "none";
+                    document.getElementById("vid2").style.border = "none";
+                    document.getElementById("vid3").style.border = "none";
+
+                    imgs.style.border = "8px solid #6F06F9";
 
 
-                
+                    if (imgs.id == "vid1") {
+                        document.getElementById("time").innerHTML = "5.59s";
+                        document.getElementById("time_proportion").innerHTML = "93.05%";
+                        document.getElementById("area_proportion").innerHTML = "3.50%";
+                        document.getElementById("interest_attention").innerHTML = "32.56%";
+                        document.getElementById("area_interes_attention").innerHTML = "9.40%";
+                        document.getElementById("intensity_area_interes_attention").innerHTML =
+                            "red: 2.19%, semired: 3.37%, orange: 2.05%, yellow: 1.61%, green: 0.18%";
+
+                    } else if (imgs.id == "vid2") {
+                        document.getElementById("time").innerHTML = "5.42s";
+                        document.getElementById("time_proportion").innerHTML = "90.27%";
+                        document.getElementById("area_proportion").innerHTML = "2.66%";
+                        document.getElementById("interest_attention").innerHTML = "33.96%";
+                        document.getElementById("area_interes_attention").innerHTML = "7.04%";
+                        document.getElementById("intensity_area_interes_attention").innerHTML =
+                            "red: 1.39%, semired: 2.29%, orange: 2.10%, yellow: 1.17%, green: 0.09%";
+                    } else {
+                        document.getElementById("time").innerHTML = "12.66s";
+                        document.getElementById("time_proportion").innerHTML = "63.33%";
+                        document.getElementById("area_proportion").innerHTML = "0.35%";
+                        document.getElementById("interest_attention").innerHTML = "31.32%";
+                        document.getElementById("area_interes_attention").innerHTML = "1.08%";
+                        document.getElementById("intensity_area_interes_attention").innerHTML =
+                            "red: 0.07%, semired: 0.21%, orange: 0.27%, yellow: 0.29%, green: 0.23%";
+                    }
+
+                }
+            </script>
+
+
+
+
+
 
             </div>
         </section>
@@ -245,29 +308,29 @@
 
     <footer id="contact">
         <!-- Footer Start-->
-       <div class="footer-main">
-         <div class="footer-area footer-padding">
-             <div class="container">
-                 <div class="row  justify-content-between">
-                     <div class="col-lg-3 col-md-4 col-sm-8">
-                          <div class="single-footer-caption mb-30">
-                               <!-- logo -->
-                              <div class="footer-logo">
-                                  <a href="index.html"><img src="assets/img/logo/pixmap_logo.png" alt=""></a>
-                              </div>
-                              <div class="footer-tittle">
-                                  <div class="footer-pera">
-                                      <p class="info1">
-                                         66 West Flagler St. #976 <br>
-                                         Miami, Florida <br>
-                                         +1 (415) 237 3339 <br>
-                                         projects@neurometrics.la</p>
-                                 </div>
-                              </div>
-                          </div>
-                     </div>
+        <div class="footer-main">
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row  justify-content-between">
+                        <div class="col-lg-3 col-md-4 col-sm-8">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/logo/pixmap_logo.png" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">
+                                            66 West Flagler St. #976 <br>
+                                            Miami, Florida <br>
+                                            +1 (415) 237 3339 <br>
+                                            projects@neurometrics.la</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!--
+                        <!--
                      <div class="col-lg-2 col-md-4 col-sm-5">
                          <div class="single-footer-caption mb-50">
                              <div class="footer-tittle">
@@ -284,38 +347,41 @@
                      </div>
                      -->
 
-                     <div class="col-lg-2 col-md-4 col-sm-7">
-                         <div class="single-footer-caption mb-50">
-                             <div class="footer-tittle">
-                                 <h4>Support</h4>
-                                 <ul>
-                                     <li><a href="faqs.html">FAQs</a></li>
-                                     <!-- <li><a href="#">Privacy Policy</a></li> -->
-                                     <li><a href="terms_conditions.html">Terms & Conditions</a></li>
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
+                        <div class="col-lg-2 col-md-4 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Support</h4>
+                                    <ul>
+                                        <li><a href="faqs.html">FAQs</a></li>
+                                        <!-- <li><a href="#">Privacy Policy</a></li> -->
+                                        <li><a href="terms_conditions.html">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                     <div class="col-lg-2 col-md-4 col-sm-5">
-                         <div class="single-footer-caption mb-50">
-                             <div class="footer-tittle">
-                                 <table>
-                                     <tr>
-                                         <td style="text-align:right">
-                                             <a id="button_ios_2" href="https://apps.apple.com/us/app/pixmap/id1522354585" target="_blank" class="app-btn1"><img src="assets/img/shape/app_store_donwload.png" alt=""></a>
-                                         </td>
-                                     </tr>
-                                     <tr>
-                                         <td style="text-align:center; vertical-align:top;">
-                                             <p>3 free tests </p>
-                                         </td>
-                                     </tr>
-                                 </table>
-                             </div>
-                         </div>
-                     </div>
-                     <!--
+                        <div class="col-lg-2 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <table>
+                                        <tr>
+                                            <td style="text-align:right">
+                                                <a id="button_ios_2"
+                                                    href="https://apps.apple.com/us/app/pixmap/id1522354585"
+                                                    target="_blank" class="app-btn1"><img
+                                                        src="assets/img/shape/app_store_donwload.png" alt=""></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center; vertical-align:top;">
+                                                <p>3 free tests </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
                      <div class="col-lg-3 col-md-6 col-sm-8">
                          <div class="single-footer-caption mb-50">
                              <div class="footer-tittle">
@@ -338,69 +404,80 @@
                          </div>
                      </div>
                      -->
-                 </div>
+                    </div>
 
-                 <!-- Copy-Right -->
-                 <div class="row align-items-center">
-                     <div class="col-xl-12 ">
-                         <div class="footer-copy-right">
+                    <!-- Copy-Right -->
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right">
 
-                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <link rel="stylesheet"
+                                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                             &copy;<script>document.write(new Date().getFullYear());</script> <a href="https://neurometrics.la/" target="_blank">Neurometrics</a> | &nbsp; <a href="https://www.facebook.com/pixmap.io/" target="_blank" class="fa fa-facebook"></a> &nbsp; <a href="https://www.instagram.com/pixmap.io/" target="_blank" class="fa fa-instagram"></a>
-                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                         </div>
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    &copy;
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> <a href="https://neurometrics.la/" target="_blank">Neurometrics</a> |
+                                    &nbsp; <a href="https://www.facebook.com/pixmap.io/" target="_blank"
+                                        class="fa fa-facebook"></a> &nbsp; <a
+                                        href="https://www.instagram.com/pixmap.io/" target="_blank"
+                                        class="fa fa-instagram"></a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
 
-                     </div>
-                 </div>
+                        </div>
+                    </div>
 
-             </div>
+                </div>
 
-         </div>
+            </div>
 
-       </div>
+        </div>
         <!-- Footer End-->
 
     </footer>
-	<!-- JS here -->
+    <!-- JS here -->
 
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
-        <!-- Date Picker -->
-        <script src="./assets/js/gijgo.min.js"></script>
-		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-		<!-- Scrollup, nice-select, sticky -->
-        <script src="./assets/js/jquery.scrollUp.min.js"></script>
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
 
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
-		<!-- Jquery Plugins, main Jquery -->
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-    </body>
+</body>
+
 </html>
